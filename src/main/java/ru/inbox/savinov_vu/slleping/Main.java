@@ -1,14 +1,14 @@
-package ru.inbox.savinov_vu.interruptionWithFiles;
+package ru.inbox.savinov_vu.slleping;
 
 import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
-        FileSearch searcher = new FileSearch("./", "file1.2a");
-        Thread thread = new Thread(searcher);
+        ConsoleClock consoleClock = new ConsoleClock();
+        Thread thread = new Thread(consoleClock);
         thread.start();
         try {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(0);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
