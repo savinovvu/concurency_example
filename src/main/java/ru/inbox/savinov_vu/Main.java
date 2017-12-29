@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         System.out.println("==============================");
         System.out.printf("Minimum Priority: %s\n",
                 Thread.MIN_PRIORITY);
@@ -31,7 +31,7 @@ public class Main {
             threads[i].setName("My Thread " + i);
         }
 
-        try (FileWriter file = new FileWriter(".//data//log.txt");
+        try (FileWriter file = new FileWriter("./data/log.txt");
              PrintWriter pw = new PrintWriter(file)
         ) {
             for (int i = 0; i < 10; i++) {
@@ -41,10 +41,35 @@ public class Main {
                 threads[i].start();
             }
             pw.println("___________________________________________________________________");
+
+            boolean finish = false;
+            while (!finish) {
+                for (int i = 0; i < 10; i++) {
+                    if (threads[i].getState() != status[i]) {
+                        writeThreadInfo(pw, threads[i], status[i]);
+                        status[i] = threads[i].getState();
+                    }
+                }
+                finish = true;
+                for (int i = 0; i < 10; i++) {
+                    finish = finish && (threads[i].getState() == Thread.State.TERMINATED);
+                }
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-
-
-
     }
+
+    private static void writeThreadInfo(PrintWriter pw, Thread thread, Thread.State state) {
+
+        pw.printf("Main : Id %d - %s\n", thread.getId(),
+                thread.getName());
+        pw.printf("Main : Priority: %d\n", thread.getPriority());
+        pw.printf("Main : Old State: %s\n", state);
+        pw.printf("Main : New State: %s\n", thread.getState());
+        pw.printf("Main : ************************************\n");
+    }
+
 }

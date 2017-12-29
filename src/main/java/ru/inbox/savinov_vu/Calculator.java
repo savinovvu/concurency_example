@@ -3,9 +3,9 @@ package ru.inbox.savinov_vu;
 public class Calculator implements Runnable {
     @Override
     public void run() {
-        long current = 1;
-        long max = 20000;
-        long numPrimes = 0;
+        long current = 1L;
+        long max = 20000L;
+        long numPrimes = 0L;
         System.out.printf("Thread '%s': Start\n", Thread.currentThread().getName());
         while (current <= max) {
             if (isPrime(current)) {
@@ -22,7 +22,7 @@ public class Calculator implements Runnable {
             return true;
         }
 
-        for (int i = 0; i < number; i++) {
+        for (int i = 2; i < number; i++) {
             if ((number % i) == 0) {
                 return false;
             }
