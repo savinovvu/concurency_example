@@ -2,9 +2,12 @@ group 'ru.inbox.savinov_vu'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'application'
 
-sourceCompatibility = 9
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
+mainClassName = "ru.inbox.savinov_vu.Main"
 repositories {
     mavenCentral()
 }
