@@ -1,4 +1,4 @@
-package ru.inbox.savinov_vu;
+package ru.inbox.savinov_vu.threadpriority;
 
 public class Calculator implements Runnable {
     @Override
