@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/concurency_example.iml" filepath="$PROJECT_DIR$/concurency_example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concurency_example_main.iml" filepath="$PROJECT_DIR$/.idea/modules/concurency_example_main.iml" group="concurency_example" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/concurency_example_test.iml" filepath="$PROJECT_DIR$/.idea/modules/concurency_example_test.iml" group="concurency_example" />
+      <module fileurl="file://$PROJECT_DIR$/1.1.concurency.iml" filepath="$PROJECT_DIR$/1.1.concurency.iml" />
     </modules>
   </component>
 </project>

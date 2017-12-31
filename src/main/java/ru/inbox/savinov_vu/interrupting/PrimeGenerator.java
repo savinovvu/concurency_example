@@ -1,4 +1,4 @@
-package ru.inbox.savinov_vu.interrupting;
+package main.java.ru.inbox.savinov_vu.interrupting;
 
 public class PrimeGenerator extends Thread {
     @Override

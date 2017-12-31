@@ -1,4 +1,4 @@
-package ru.inbox.savinov_vu.slleping;
+package main.java.ru.inbox.savinov_vu.slleping;
 
 import java.util.concurrent.TimeUnit;
 

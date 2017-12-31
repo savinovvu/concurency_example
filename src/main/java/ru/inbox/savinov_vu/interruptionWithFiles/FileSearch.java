@@ -1,4 +1,4 @@
-package ru.inbox.savinov_vu.interruptionWithFiles;
+package main.java.ru.inbox.savinov_vu.interruptionWithFiles;
 
 import java.io.File;
 

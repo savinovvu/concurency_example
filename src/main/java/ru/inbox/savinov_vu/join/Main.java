@@ -1,4 +1,4 @@
-package ru.inbox.savinov_vu.join;
+package main.java.ru.inbox.savinov_vu.join;
 
 import java.util.Date;
 
