@@ -79,12 +79,7 @@ Main : Priority: 1
 Main : Old State: RUNNABLE
 Main : New State: TERMINATED
 Main : ************************************
-Main : Id 15 - My Thread 4
-Main : Priority: 10
-Main : Old State: RUNNABLE
-Main : New State: TERMINATED
-Main : ************************************
-Main : Id 19 - My Thread 8
+Main : Id 17 - My Thread 6
 Main : Priority: 10
 Main : Old State: RUNNABLE
 Main : New State: TERMINATED
@@ -99,7 +94,12 @@ Main : Priority: 1
 Main : Old State: RUNNABLE
 Main : New State: TERMINATED
 Main : ************************************
-Main : Id 17 - My Thread 6
+Main : Id 19 - My Thread 8
+Main : Priority: 10
+Main : Old State: RUNNABLE
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 15 - My Thread 4
 Main : Priority: 10
 Main : Old State: RUNNABLE
 Main : New State: TERMINATED
