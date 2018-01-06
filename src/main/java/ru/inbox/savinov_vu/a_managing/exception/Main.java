@@ -8,6 +8,6 @@ public class Main {
         thread.start();
         int a = 6;
         int c = 0;
-//        int b = a_managing/c;
+//        int b_basicSynchronization = a_managing/c;
     }
 }
