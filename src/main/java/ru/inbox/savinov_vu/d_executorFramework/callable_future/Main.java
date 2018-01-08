@@ -35,7 +35,7 @@ public class Main {
         int i = 0;
         for (Future<Integer> intergerFuture : resultList) {
             Integer futureResult = intergerFuture.get();
-            System.out.printf("Main: Task %d: %d\n",i,futureResult);
+            System.out.printf("Main: Task %d: %d\n",i++,futureResult);
         }
         executor.shutdown();
 
