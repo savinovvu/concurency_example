@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1.1.concurency.iml" filepath="$PROJECT_DIR$/1.1.concurency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.concurency_example.iml" filepath="$PROJECT_DIR$/7.concurency_example.iml" />
     </modules>
   </component>
 </project>
